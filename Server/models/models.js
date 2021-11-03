@@ -19,6 +19,7 @@ const Questions = sequelize.define('questions', {
     description: {type: DataTypes.STRING},
     options: {type: DataTypes.ARRAY(DataTypes.TEXT)},
     type: {type: DataTypes.STRING},
+    index: {type: DataTypes.INTEGER},
 })
 
 const Answers = sequelize.define('answers', {
@@ -56,4 +57,5 @@ module.exports = {
     Questions,
     Answers,
     Respondent,
+    Links,
 }
